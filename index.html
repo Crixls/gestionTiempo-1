@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="search">
+      <input type="text" placeholder="Introduce nombre ciudad">
+      <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+    </div>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    <div class="weather">
+      <img class="weatherIcon oculto" src="" alt="Icono del clima">      <div>
+        <h1 class="celsius">22ºc</h1>
+        <h2 class="city">London</h2>
+      </div>
+      <div class="detail">
+        <div class="col">
+          <i class="fa-solid fa-droplet fa-2xl"></i>          <div class="humedad">
+            <p class="humedadPorcentaje">20%</p>
+            <p>Humedad</p>
+          </div>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-wind fa-2xl"></i>
+          <div class="viento">
+            <p class="velocidadViento">20k/h</p>
+            <p>Viento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/2e130211ff.js" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+<!-- 
+
+//Crear un proyecto en vite que permita gestionar el estado meteorologico de una ciudad a traves de la api
+//openweathermap, tenemos que registrarnos en la pagina web y mirar documentación, la 2.0. El proyecto debe tener esto:
+//dispondremos de un input centrado en la pantalla horizontalmente y un boton de buscar ciudad.
+/*Cuando escribamos el nombre de una ciudad; al introducir el nombre de una ciudad si existe mostrará los siguientes datos en una tarjeta o card:
+necesitas un array de imagenes y ellos te dan un un texto con lo que es cada cosa y se pondrá un icono, 1. nombre ciudad, 2.icono, 3.datos más relevantes temperatura, presión con algún icono;
+
+La búsqueda de la ciudad se hará por enter o con click de botón.*/
+
+ -->
